@@ -13,6 +13,22 @@ def create_chat_bot():
    trainer = ChatterBotCorpusTrainer(chatbot)
    trainer.train('chatterbot.corpus.english')
 
+   def create_chat_bot():
+       chatbot = ChatBot('Chattering Bot')
+       trainer = ChatterBotCorpusTrainer(chatbot)
+       trainer.train('chatterbot.corpus.english')
+
+       while True:
+           try:
+               bot_input = chatbot.get_response(input())
+               print(bot_input)
+
+           except (KeyboardInterrupt, EOFError, SystemExit):
+               break
+
+   if __name__ == '__main__':
+       create_chat_bot()
+
    while True:
        try:
            bot_input = chatbot.get_response(input())
