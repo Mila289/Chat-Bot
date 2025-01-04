@@ -3,3 +3,12 @@
 #3) Navigate to your Python3 directory
 #4) Modify Lib/site-packages/chatterbot/tagging.py to properly load 'en_core_web_sm'
 
+
+from chatterbot import ChatBot
+from chatterbot.trainers import ChatterBotCorpusTrainer
+
+
+
+
+
+
